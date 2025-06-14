@@ -1,12 +1,12 @@
-{% set version = "1.6.1" %}
+{% set version = "1.6.3" %}
 
 package:
   name: keyutils
   version: {{ version }}
 
 source:
-  url: https://people.redhat.com/~dhowells/keyutils/keyutils-{{ version }}.tar.bz2
-  sha256: c8b15722ae51d95b9ad76cc6d49a4c2cc19b0c60f72f61fb9bf43eea7cbd64ce
+  url: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-{{ version }}.tar.gz
+  sha256: a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
   patches:
     - 0001-Make-endian-detection-in-work-on-non-RHEL-distributi.patch
     - 0002-Fix-installing-shared-library-symlinks-with-DESTDIR.patch
@@ -35,7 +35,7 @@ test:
     # - keyctl unlink $(keyctl search @s user cf-keyctl-key) @s
 
 about:
-  home: https://people.redhat.com/~dhowells/keyutils/
+  home: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/
   license: LGPL-2.1-or-later
   license_file: LICENCE.LGPL
   summary: Linux Key Management Utilities
