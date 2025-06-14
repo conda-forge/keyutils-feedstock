@@ -8,8 +8,8 @@ source:
   url: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-{{ version }}.tar.gz
   sha256: a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
   patches:
-    - 0001-Make-endian-detection-in-work-on-non-RHEL-distributi.patch
-    - 0002-Fix-installing-shared-library-symlinks-with-DESTDIR.patch
+    - patches/0001-Make-endian-detection-in-work-on-non-RHEL-distributi.patch
+    - patches/0002-Fix-installing-shared-library-symlinks-with-DESTDIR.patch
 
 build:
   number: 0
