@@ -22,6 +22,8 @@ requirements:
   build:
     - {{ stdlib('c') }}
     - {{ compiler('c') }}
+    # build wants to use g++ symlink
+    - gxx
     - make
     - file
 
